@@ -252,6 +252,7 @@ display: block;
     background-color:  rgb(245 245 245);
   }
   .featuers .container {
+    padding: 3rem 0;
     text-align: center;
     line-height: 1.8;
   }
