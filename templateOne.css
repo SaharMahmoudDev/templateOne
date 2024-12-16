@@ -17,15 +17,21 @@
     font-family: "work-sans", sans-serif;
   }
   :root {
+    --max-width-section:1200px;
     --main-color: #10cab7;
     --secondary-color: #2c4755;
+    --background-firstSection: rgb(245 245 245);
+    --background-secondSection: white;
+    --padding-section: 1rem;
+    --margin-bottom-section: 3rem;
+    --color-heading:lightgray;
   }
   
   /* stert component classes */
   .section{
-    padding: 1rem;
-    margin-bottom: 3rem;
-    background-color:     rgb(245 245 245);
+    padding: var(--padding-section, 1rem);
+    margin-bottom: var(--margin-bottom-section, 3rem);
+    background-color:  var(--background-firstSection,rgb(245 245 245));
   }
   .containerHead{
     width: fit-content;
@@ -35,11 +41,12 @@
     margin-left: auto;
     margin-right: auto;
     line-height: .6;
-    margin-bottom: 1rem;
+    margin-bottom: var(--margin-bottom-section, 3rem);
   }
   .heading {
     font-weight: 800;
     color: lightgray;
+    color: var(--color-heading,lightgray);
     opacity: 0.2;
     letter-spacing: -.25rem;
     font-family: sans;
@@ -61,10 +68,10 @@
     line-height: 1;
   }
   .content-section{
-    max-width: 1200px;
+    max-width: var(--max-width-section,1200px);
     margin-left: auto;
     margin-right: auto;
-    padding: 1rem;
+    padding: var(--padding-section, 1rem);
     display: grid;
     grid-template-columns:repeat(auto-fit,minmax(20rem,1fr));
     gap: 2rem;
@@ -102,11 +109,10 @@
   /* start header */
   .containerProject section.home .header{
     background-color: white;
-    /* position: relative; */
   }
   .header .container {
-    padding: 1rem;
-    max-width: 1200px;
+    padding:var(--padding-section, 1rem);
+    max-width: var(--max-width-section,1200px);
     margin:0 auto;
     display: flex;
     justify-content: space-between;
@@ -153,10 +159,6 @@
   .links span.span .span2.toggel {
     width: 1.5rem;
     margin-left: 0px;
-    /* visibility: visible; */
-    /* color: black; */
-    /* background-color: red; */
-    /* color:blue; */
   }
   .links ul {
     position: absolute;
@@ -195,16 +197,11 @@
     text-decoration: none;
     display: block;
   }
-  /* .links .span:hover  ul {
-display: block;
-  } */
-
   
   /*start landing*/
   .landing {
     background-image: url(https://raw.githubusercontent.com/ElzeroWebSchool/HTML_And_CSS_Template_One/main/images/landing.jpg);
     background-size: cover;
-    /* max-width: 100%; */
     height: 100vh;
     position: relative;
   }
@@ -249,7 +246,7 @@ display: block;
  /* start featuers*/
 
   .featuers {
-    background-color:  rgb(245 245 245);
+    background-color: var(--background-firstSection,rgb(245 245 245));
   }
   .featuers .container {
     padding: 3rem 0;
@@ -269,6 +266,7 @@ display: block;
     margin: 1.25rem;
   }
   .featuers .container i {
+    margin-bottom: var(--margin-bottom-section, 3rem);
     color: var(--main-color);
     font-size: 3.1rem;
   }
@@ -276,7 +274,7 @@ display: block;
 
  /* start services */
   .services{
-    background-color: white;
+    background-color:var( --background-secondSection, white);
   }
   .services .container .content-services {
     margin-left: auto;
@@ -329,7 +327,6 @@ display: block;
   }
   .services .container .content-services .image {
     position: relative;
-    /* width:fit-content; */
     z-index: 1;
   }
   .services .container .image::after {
@@ -390,19 +387,18 @@ display: block;
   /* start about */
   .about {
     margin-bottom: 3rem;
+    background-color: var(--background-secondSection, white);
   }
   .about .container .section-about {
-    max-width: 1200px;
-    padding: 1rem;
+    max-width: var(--max-width-section,1200px);
+    padding:var(--padding-section, 1rem);
     margin: 2.5rem auto 0;
-  }
-  .about .container .section-about .img-about .image-about {
-    max-width: 100%;
   }
   .about .container .section-about .img-about {
     width: 250px;
     height: 375px;
     position: relative;
+    z-index: 1000;
   }
   @media (min-width:992px) {
   .about .section-about .img-about::before {
