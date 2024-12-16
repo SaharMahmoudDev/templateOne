@@ -21,10 +21,11 @@
     --main-color: #10cab7;
     --secondary-color: #2c4755;
     --background-firstSection: rgb(245 245 245);
+    --background-firstSection: #f6f6f6;
     --background-secondSection: white;
     --padding-section: 1rem;
     --margin-bottom-section: 3rem;
-    --color-heading:lightgray;
+    --color-heading:#ebeced;
   }
   
   /* stert component classes */
@@ -45,9 +46,7 @@
   }
   .heading {
     font-weight: 800;
-    color: lightgray;
-    color: var(--color-heading,lightgray);
-    opacity: 0.2;
+    color: var(--color-heading,#ebeced);
     letter-spacing: -.25rem;
     font-family: sans;
   }
@@ -64,7 +63,7 @@
   }
   .heading + p {
     opacity: 0.6;
-    font-size: .8rem;
+    font-size: .9rem;
     line-height: 1;
   }
   .content-section{
