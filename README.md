@@ -19,7 +19,7 @@ Perfect for simple product or service showcases.
 - Clean and organized codebase
 
 ## About the Developer
-Created with by Nova Quill
+Created with by Sahar Mahmoud
 Connect or explore more:
 
 GitHub: [@SaharMahmoudDev on github](https://github.com/SaharMahmoudDev)
